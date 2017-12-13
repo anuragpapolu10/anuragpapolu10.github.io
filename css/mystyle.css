@@ -1,7 +1,48 @@
+/* Contents
 
+1. css reset
+2. links
+3. body
+4. header
+5. navbar, lists
+6. div classes, embeds
+7. headings, text, blockquotes
+8. footer
+9. mediaqueries
+
+
+ */
+
+
+
+
+
+/* 1. css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* 2. links */
 /* unvisited link */
-
-
 a:link {
    color: black;
    text-decoration: none;
@@ -25,163 +66,87 @@ a:active {
    text-decoration: none;
 }
 
-
-
+/* 3. body */
 body {
-text-align: center;
-background: url('https://i.imgur.com/K2Ddj9h.png');
-background-size: cover;
-background-position:auto;
-background-repeat: no-repeat;
-background-attachment: fixed;
-color:  white;
+background-color: white;
 font-family: 'Roboto', sans-serif;
 
 
     }
 
 
+/* 4. header */
 header {
       text-align: center;
-      background: url('https://i.imgur.com/E1FnDOw.jpg');
+      padding-top: 20px;
       font-weight: bold;
       color: Black;
-      padding-top: 1px;
       width: 100%;
-      height: 150px;
+      height: 120px;
       overflow: auto;
 
-
        }
 
-
-h1 {
-      text-align: center;
-      color: Black;
-      font-family: 'Abril Fatface', cursive;
-      font-size: 42px;
-       }
-
-h2 {
-     text-align: center;
-     color: Black;
-     margin-top:20px;
-    }
-
-
+/* 5. navbar, lists */
 .main-nav {
-
         width: 100%;
 	      position: sticky;
-        box-shadow: 0 2px 3px rgb(0,0,0,0.4);
+        box-shadow: 0 3px 6px rgb(0,0,0,0.4);
         top: 0;
         z-index: 1;
         background-color: white;
         overflow: auto;
         height: 50px;
+        text-align: center;
 
           }
 
-
-
-
 ul {
-      padding: 1px;
-      background: rgba(255,255,255,0.8);
+
    }
 
 
  li {
          display: inline;
          padding: 0px 20px 0px 20px;
+         font-weight: bold;
     }
 
 
+/* 6. div classes, embeds */
 
 
-
-
-@media (max-width: 500px) {
-        h1 {
-          font-size: 36px;
-          padding: 5px;
-        }
-        li {
-          padding: 5px;
-          display: block;
-        }
-
-        img {
-    max-width: 100%;
-    height: auto;
-}
-      }
-
-
-
-
-
-
-
-p {
-
-      font-size: 18px;
-      text-align: left;
-      line-height: 24px; /* 4px +12px + 4px */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
 }
 
-
-.heading {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color:black;
-        max-width: 800px;
-        margin: auto;
+#sidebar {
+    float: left;
+    width: 20%;
 }
 
-
-.bylines {
-        padding-left: 20px;
-        padding-bottom: 10px;
-        color:black;
-        max-width: 800px;
-        margin: auto;
-
+#content-wrap {
+    float: right;
+    width: 80%;
 }
-
-
-blockquote { padding-top: 10px;
-             padding-bottom: 10px;
-             font-size: 20px;
-             text-align: left;
-             line-height: 28px; /* 4px +12px + 4px */
-             color: rgba(025, 100, 150, 0.8);
-
-}
-
-
-
 
 .textbox {
           color:black;
           max-width: 700px;
           margin: auto;
-
-}
-
-.tweets {
-          color:black;
-          max-width: 800px;
-          margin: auto;
-          padding: 20px;
+          padding-top:40px;
 
 }
 
 
-.twitter {max-width: 600px;
-          min-width: 600px;
+.bylines {
+
+margin-left: 80px;
+margin-top: 40px;
 
 }
+
 
 .embedtweet {
               margin: auto;
@@ -189,10 +154,201 @@ blockquote { padding-top: 10px;
 
 }
 
+.chartwrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
 
+}
+
+
+
+
+ /* 7. headings, blockquotes, text, decorative */
+ h1 {
+       text-align: center;
+       color: Black;
+       font-family: 'Passion One', cursive;
+       width: 800px;
+       font-size: 42px;
+       padding-top: 10px;
+       margin: auto;
+        }
+
+ h2 {
+      text-align: center;
+      color: Black;
+      margin-top:20px;
+     }
+
+h5 {
+      text-align: center;
+      color: Black;
+      padding:30px;
+     }
+
+blockquote {
+             margin-left: 80px;
+             font-size: 28px;
+             font-family: 'passion One', Cursive;
+
+             line-height: 32px; /* 4px +12px + 4px */
+             color: black;
+             width: 200px;
+}
+
+#bq1 {
+        margin-top: 250px;
+        padding-bottom: 10px;
+}
+
+#bq2 {
+        margin-top: 380px;
+        padding-bottom: 10px;
+}
+
+#bq3 {
+        margin-top: 800px;
+        padding-bottom: 10px;
+}
+
+
+
+
+p {
+      font-size: 18px;
+      text-align: left;
+      line-height: 24px; /* 4px +12px + 4px */
+}
+
+figcaption {
+      color: grey;
+      text-align: center;
+      padding: 10px;
+
+}
+
+
+
+/* 8. footer */
 footer {
-background-color: #e8b69b;
-height: 120px;
-overflow: auto;
-text-align:center; margin: auto;
+background-color: #fedfae;
+height: 220px;
+margin: auto;
+text-align: center;
+
+}
+
+
+/* 9. mediaqueries */
+@media only screen and (max-width: 500px) {
+    h1 {
+        max-width: 70%;
+    }
+
+    body {
+      width: 100%;
+    }
+
+
+    header {
+          max-width: 100%;
+          height: 300px;
+           }
+
+    li {
+         display: inline;
+         padding: 0px 5px 0px 5px;
+      }
+
+      h1 {
+           text-align: center;
+           color: Black;
+           font-family: 'Passion One', cursive;
+           width: 800px;
+           font-size: 42px;
+           padding-top: 10px;
+            margin: auto;
+                  }
+
+     #sidebar {
+               width: 100%;
+               display: block;
+           }
+
+      #content-wrap {
+               width: 100%;
+           }
+
+      #bq1 {
+                   margin-top: 50px;
+                   padding-bottom: 10px;
+           }
+
+      #bq2 {
+                   margin-top: 50px;
+                   padding-bottom: 10px;
+           }
+
+      #bq3 {
+                   margin-top: 50px;
+                   padding-bottom: 10px;
+           }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        max-width: 70%;
+    }
+
+    body {
+      width: 100%;
+    }
+
+    header {
+          max-width: 100%;
+          height: 300px;
+           }
+
+    li {
+          display: inline;
+          padding: 0px 5px 0px 5px;
+         }
+
+    h1 {
+         text-align: center;
+         color: Black;
+         font-family: 'Passion One', cursive;
+         width: 800px;
+         font-size: 42px;
+         padding-top: 10px;
+          margin: auto;
+                }
+
+     #sidebar {
+               width: 100%;
+               display: block;
+           }
+
+      #content-wrap {
+               width: 100%;
+           }
+
+      #bq1 {
+                   margin-top: 50px;
+                   padding-bottom: 10px;
+           }
+
+      #bq2 {
+                   margin-top: 50px;
+                   padding-bottom: 10px;
+           }
+
+      #bq3 {
+                   margin-top: 50px;
+                   padding-bottom: 10px;
+           }
+
+
 }
