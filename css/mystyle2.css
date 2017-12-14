@@ -121,15 +121,8 @@ ul {
     overflow: hidden;
 }
 
-#sidebar {
-    float: left;
-    width: 20%;
-}
 
-#content-wrap {
-    float: right;
-    width: 80%;
-}
+
 
 .textbox {
           color:black;
@@ -143,7 +136,7 @@ ul {
 .bylines {
 
 margin-left: 80px;
-margin-top: 40px;
+
 
 }
 
