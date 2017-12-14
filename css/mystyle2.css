@@ -78,11 +78,10 @@ font-family: 'Roboto', sans-serif;
 /* 4. header */
 header {
       text-align: center;
-
       font-weight: bold;
       color: Black;
       width: 100%;
-      height: 120px;
+      height: 200px;
       overflow: auto;
 
        }
@@ -113,7 +112,7 @@ ul {
     }
 
 
-/* 6. div classes, embeds */
+/* 6. div classes, embeds, iframe resizes */
 
 
 #main-wrap {
