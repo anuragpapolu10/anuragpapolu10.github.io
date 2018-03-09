@@ -117,14 +117,14 @@ $(document).ready(function () {
 	/*autopplay info*/
 	$('#circle_device').click(function () {
 		showInfo4();
-		$('#popIn4').text("As we surround ourselves with technology, whether for work or for fun, we engage with a variable ratio schedule.").addClass('popIn-info');
+		$('#popIn4').text("As we surround ourselves with technology, whether for work or for fun, we engage with a variable ratio schedule.").addClass('popIn-info2');
 	});
 
 
 	/*recommended info*/
 	$('#circle_society').click(function () {
 		showInfo4();
-		$('#popIn4').text("The variable ratio schedule in social media manifests in the form of on screen notifications, message tones, likes and comments.").addClass('popIn-info');
+		$('#popIn4').text("The variable ratio schedule in social media manifests in the form of on screen notifications, message tones, likes and comments.").addClass('popIn-info2');
 	});
 
 	/*close info window*/

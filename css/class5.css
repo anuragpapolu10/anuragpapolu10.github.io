@@ -376,6 +376,25 @@ text-align: center;
 
     }
 
+
+        .popIn-info2 {
+        position: absolute;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: roboto;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        padding: 20%;
+        font-size: 14px;
+        text-align: center;
+        color: brown;
+        height: 50%;
+        padding-top: 5%;
+        /*display: none;*/
+
+    }
+
     .btn_close {
         position: absolute;
         font-family: sans-serif;
@@ -494,8 +513,7 @@ to {opacity:0;}
         height: auto;
         text-align: center;
 
-
-          }
+     }
 
  ul {
 
@@ -506,9 +524,28 @@ to {opacity:0;}
          display: inline;
          padding: 0px 20px 0px 20px;
          font-weight: bold;
-}
+	}
+ 
+
+
+ .popIn-info2 {
+        position: absolute;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: roboto;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        padding: 20%;
+        font-size: 16px;
+        text-align: center;
+        color: brown;
+        height: 50%;
+        padding-top: 30%;
+        /*display: none;*/
+	}
          
-    }
+  }
 
 
 
