@@ -99,7 +99,7 @@ header {
 
 }
 
-/* 5. navbar, lists */
+/* 5. navbar, lists, tables */
 
 ul {
 
@@ -113,6 +113,31 @@ ul {
          list-style-type: none;
 }
 
+
+table {
+    border-collapse: collapse;
+    width: 700px;
+    margin:auto;
+    margin-top: 40px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+  background-color: #A5ECFF;
+
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+input {
+
+  width:100px;
+}
 
 
 /* 6. div classes, embeds */
@@ -141,7 +166,7 @@ margin-top: 40px;
 
 
 
-/* 7. headings, blockquotes, text, decorative */
+/* 7. headings, blockquotes, text, decorative, spans */
  h1 {
        text-align: center;
        color: Black;
@@ -158,6 +183,8 @@ margin-top: 40px;
       text-align: center;
       color: Black;
       margin-top:20px;
+      font-size: 24px;
+      font-weight: bold;
 }
 
 h5 {
@@ -180,6 +207,20 @@ figcaption {
       padding: 10px;
 
 }
+
+.total {
+  margin:0,auto;
+  text-align:center;
+  font-size: 36;
+  font-weight: bold;
+}
+
+#post_total{
+  margin-bottom: 40px;
+
+}
+
+
 
 
 #box2{
@@ -216,11 +257,12 @@ padding-right: 20px;
 
 /* 8. footer */
 footer {
-background-color: #fedfae;
-height: 220px;
-margin: auto;
-width:100%;
-text-align: center;
+  padding-top: 40px;
+  background-color: #fedfae;
+  height: 220px;
+  margin: auto;
+  width:100%;
+  text-align: center;
 
 }
 
@@ -463,7 +505,7 @@ to {opacity:0;}
             background-color: purple;
         }
         .popIn-info {
-            font-size: 16px;
+            font-size: 20px;
             padding-top: 30%;
             padding-left: 10%;
             padding-right: 10%;
@@ -546,7 +588,49 @@ to {opacity:0;}
 	}
          
   }
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
 
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+
+
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+  }
+  
+  tr { border: 1px solid #ccc;
+ 
+      }
+
+ 
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
 
 
 

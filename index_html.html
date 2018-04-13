@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+   		<title>Social Media Addiction</title>
+   		<meta name="description" content="A webpage about how social media is designed to be addictive">
+    	<meta name="author" content="Anurag Papolu, Allyson Escobar">
+    	<meta name="keywords" content="social media, addiction, web design, pyshology, behaviour, interactive, journalism">
+    	<link href="https://fonts.googleapis.com/css?family=Passion+One|Roboto" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Social Media Calculator</title>
+
+        <!-- FONT AWESOME -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Your styles should be called here -->
+        <link href="css/calc.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1>How much time do you spend on social media?</h1>
+            <p>Let's find out the truth.</p>
+
+            <table>
+                <tr>
+                    <th>Time Spent</th>
+                    <th>Hours Per Day</th>
+                    <th>Week</th>
+                    <th>Month</th>
+                    <th>Year</th>
+                    <th>Decade</th>
+                    
+                    <!-- <th>TOTAL before tariff</th>
+                    <th>TOTAL after tariff</th> -->
+                </tr>
+
+                <tr class="item" data-week="7" data-month="30" data-year="365" data-decade="3650">
+                    <td>Social Media</td>
+                    <td><input class="hours" type="number" placeholder="hrs/day" /></td>
+                  
+                    <td class="aweek smweektotal"><span></span> hrs</td>
+                    <td class="amonth"><span></span> hrs</td>
+                    <td class="ayear"><span></span> hrs</td>
+                    <td class="adecade"><span></span> hrs</td>
+
+
+                </tr>
+                <tr class="item" data-week="7" data-month="30" data-year="365" data-decade="3650">
+                    <td>Eating</td>
+                    <td><input class="hours" type="number" placeholder="hrs/day" /></td>
+                    
+                    <td class="aweek otherweektotal" ><span></span> hrs</td>
+                    <td class="amonth"><span></span> hrs</td>
+                    <td class="ayear"><span></span> hrs</td>
+                    <td class="adecade"><span></span> hrs</td>
+
+                </tr>
+                <tr class="item" data-week="7" data-month="30" data-year="365" data-decade="3650">
+                    <td>Sleeping</td>
+                    <td><input class="hours"  type="number" placeholder="hrs/day" /></td>
+                    <td class="aweek otherweektotal"><span></span> hrs</td>
+                    <td class="amonth"><span></span> hrs</td>
+                    <td class="ayear"><span></span> hrs</td>
+                    <td class="adecade"><span></span> hrs</td>
+
+                </tr>
+
+                 <tr class="item" data-week="7" data-month="30" data-year="365" data-decade="3650">
+                    <td>Quality Time</td>
+                    <td><input class="hours" type="number" placeholder="hrs/day" /></td>
+                    <td class="aweek otherweektotal"><span></span> hrs</td>
+                    <td class="amonth"><span></span> hrs</td>
+                    <td class="ayear"><span></span> hrs</td>
+                    <td class="adecade"><span></span> hrs</td>
+                </tr>
+
+            </table>
+
+            <div id="pre_total" class="total">
+                <h2>Hours per week spent on social media:</h2>
+                <span></span>
+            </div>
+
+            <div id="post_total" class="total">
+                <h2>Hours spent having a life per week:</h2>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="js/calc.js"></script>
+    </body>
+
+</html>

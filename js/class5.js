@@ -44,7 +44,7 @@ $(document).ready(function () {
 	/*human info*/
 	$('#circle_human').click(function () {
 		showInfo2();
-		$('#popIn2').text("Anticipating a reward is shown to stimulate the brain more than actually getting one, says psychologist Susan Weinschenk, and that's the idea behind push notifications.").addClass('popIn-info');
+		$('#popIn2').text("Anticipating a reward is shown to stimulate the brain more than actually getting one, and that's the idea behind push notifications.").addClass('popIn-info');
 	});
 
 
