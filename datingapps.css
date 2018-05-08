@@ -1,0 +1,744 @@
+ /* Contents
+
+1. css reset
+2. links
+3. body
+4. header
+5. navbar, lists
+6. div classes, embeds, swipe
+7. headings, text, blockquotes
+8. footer
+9. mediaqueries
+
+
+ */
+
+
+/* 1. css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 2. links */
+/* unvisited link */
+a:link {
+   color: black;
+   text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+   color: black;
+   text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+   color: grey;
+   text-decoration: none;
+}
+
+/* selected link */
+a:active {
+   color: black;
+   text-decoration: none;
+}
+
+/* 3. body */
+body {
+background-color: white;
+font-family: 'Roboto', sans-serif;
+width:100%;
+
+
+}
+
+
+/* 4. header */
+
+.main-nav {
+        width: 100%;
+        position: sticky;
+        box-shadow: 0 3px 6px rgb(0,0,0,0.4);
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        overflow: auto;
+        height: auto;
+        text-align: center;
+
+          }
+          
+header {
+      text-align: center;
+
+      font-weight: bold;
+      color: black;
+      width: 100%;
+      height: auto;
+      margin: auto;
+
+
+}
+
+/* 5. navbar, lists, tables */
+
+ul {
+
+}
+
+
+ li {
+
+         padding: 0px 0px 10px 0px;
+         font-weight: bold;
+         list-style-type: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    max-width: 400px;
+    margin:auto;
+    margin-top: 40px;
+    table-layout:fixed;
+
+}
+
+
+table.cell1{
+display:table-cell;
+width:100px;
+min-width:100px;
+border: 2px dashed #40f;    
+}
+
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+font-weight: bold;
+
+}
+
+.container { height: 20em; overflow: auto; }
+
+
+th{
+  background-color: #A5ECFF;
+
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+input {
+
+    width: 300px;
+    height:36px;
+    font-size: 28px
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+
+}
+
+#chart1{
+
+  max-width: 400px;
+  margin: 0,auto;
+  margin-left: 120px;
+  text-align: center;
+}
+
+
+/* 6. div classes, embeds */
+
+.textbox {
+  color:black;
+  max-width: 600px;
+
+  margin: auto;
+  padding-top:40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.5;
+
+}
+
+
+
+.bylines {
+text-align: center;
+margin: 0 auto;
+margin-top: 40px;
+
+}
+
+/* ============= 6. Swipe ============== */
+
+
+
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  width: 400px;
+  height: 533px;
+  position: absolute;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform-origin: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  cursor: -webkit-grab;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(800px);
+  transform: perspective(800px);
+}
+
+.color0 {
+    background-image: url("card5.jpg");
+}
+
+.color1 {
+    background-image: url("card4.jpg");
+}
+
+.color2 {
+    background-image: url("card3.jpg");
+}
+
+.color3 {
+    background-image: url("card2.jpg");
+}
+
+.color4 {
+    background-image: url("card1.jpg");
+}
+
+
+
+.text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 50px;
+  color: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* ============= /Swipe ============== */
+
+/* 7. headings, blockquotes, text, decorative, spans */
+ h1 {
+       text-align: center;
+       color: Black;
+       font-family: 'Passion One', cursive;
+       width: 90%;
+       font-size: 42px;
+       padding-top: 30px;
+       padding-bottom: 10px;
+       margin: auto;
+
+}
+
+ h2 {
+      text-align: center;
+      color: Black;
+      margin-top:20px;
+      font-size: 24px;
+      font-weight: bold;
+}
+
+h5 {
+      text-align: center;
+      color: Black;
+      padding:30px;
+}
+
+
+
+p {
+      font-size: 18px;
+      text-align: left;
+      line-height: 24px; /* 4px +12px + 4px */
+}
+
+figcaption {
+      color: grey;
+      text-align: center;
+      padding: 10px;
+
+}
+
+.total {
+  margin:0,auto;
+  text-align:center;
+  font-size: 36;
+  font-weight: bold;
+}
+
+#post_total{
+  margin-bottom: 40px;
+
+}
+
+
+
+
+#box2{
+  max-width: 40%;
+  margin: 0 auto;
+
+}
+
+
+
+.caption{
+      color: grey;
+      text-align: center;
+      padding-top: 5px;
+      padding-left: 5%;
+      padding-right:5%;
+      max-width: 600px;
+      margin: 0 auto;
+
+}
+
+
+.block{
+font-size: 30px;
+font-family: 'Passion One', cursive;
+padding-bottom: 40px;
+max-width: 600px;
+margin: auto;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+
+/* 8. footer */
+footer {
+  padding-top: 40px;
+  background-color: #fedfae;
+  height: 220px;
+  margin: auto;
+  width:100%;
+  text-align: center;
+
+}
+
+
+
+
+/* 9. javascript */
+
+.circle {
+        width: 18px;
+        height: 18px;
+        border-radius: 100px;
+        background-color: blue;
+        border: solid orange;
+        opacity: .9;
+        z-index: 3;
+        display: block;
+    }
+
+    #circle_rednots {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 36%;
+        /* Must be in percentage or will move on different devices*/
+        left: 35%;
+    }
+
+    #circle_redapps {
+        position: absolute;
+        top: 80%;
+        /* Must be in percentage or will move on different devices*/
+        left: 55%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+    #circle_human {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 32%;
+        /* Must be in percentage or will move on different devices*/
+        left: 45%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+    #circle_comp {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 67%;
+        /* Must be in percentage or will move on different devices*/
+        left: 45%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+        
+
+    #circle_autoplay {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 22.5%;
+        /* Must be in percentage or will move on different devices*/
+        left: 59%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+        
+    #circle_recommended {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 75%;
+        /* Must be in percentage or will move on different devices*/
+        left: 45%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+
+    #circle_device {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 33%;
+        /* Must be in percentage or will move on different devices*/
+        left: 80%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+        
+    #circle_society {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 75%;
+        /* Must be in percentage or will move on different devices*/
+        left: 45%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+
+    .photo-container {
+        width: 60%;
+        position: relative;
+        margin:auto;
+        /*z-index: 1;*/
+    }
+
+    .photo-container2 {
+        width: 90%;
+        position: relative;
+        margin:auto;
+        /*z-index: 1;*/
+    }
+
+    .info_slides {
+
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: .9;
+        display: none;
+        /*padding-top: 20px;*/
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 6;
+        border-radius: 5;
+
+
+
+    }
+
+    .info_slides_show {
+      animation: fadein 0.5s;
+        display: block;
+
+    }
+
+    .hide_btn {
+        display: none;
+    }
+
+    .popIn-info {
+        position: absolute;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: roboto;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        padding: 20%;
+        font-size: 16px;
+        text-align: center;
+        color: brown;
+        height: 50%;
+        padding-top: 30%;
+        /*display: none;*/
+
+    }
+
+
+        .popIn-info2 {
+        position: absolute;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: roboto;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        padding: 20%;
+        font-size: 14px;
+        text-align: center;
+        color: brown;
+        height: 50%;
+        padding-top: 5%;
+        /*display: none;*/
+
+    }
+
+    .btn_close {
+        position: absolute;
+        font-family: sans-serif;
+        top: 92%;
+        left: 47%;
+        font-size: 5em;
+        color: black;
+        z-index: 20;
+        font-weight: 900;
+        display: none;
+    }
+
+
+    .btn_close_show {
+        display: block;
+    }
+
+@keyframes fadein {
+
+from {opacity:0;}
+to {opacity:.9;}
+
+}
+@keyframes fadeout {
+
+from {opacity:0.9;}
+to {opacity:0;}
+
+}
+
+
+img {
+        width: 80%;
+        margin: 0 auto;
+        height: 30%;
+    }
+
+
+
+
+
+/* 10. mediaqueries */
+    @media(min-width: 681px) {
+        /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+       
+      .photo-container {
+        width: 30%;
+        position: relative;
+        margin:auto;
+        /*z-index: 1;*/
+        }
+
+        .popIn-info {
+            font-size: 16px;
+            padding-top: 30%;
+            /*display: none;*/
+        }
+
+
+    } 
+
+
+
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+        .circle:hover {
+            background-color: purple;
+        }
+        .popIn-info {
+            font-size: 20px;
+            padding-top: 30%;
+            padding-left: 10%;
+            padding-right: 10%;
+            /*display: none;*/
+        }
+        .btn_close {
+            font-size: 4em;
+        }
+        .btn_close:hover {
+            color: blue;
+        }
+
+        .photo-container {
+        width: 25%;
+        position: relative;
+        margin:auto;
+
+        /*z-index: 1;*/
+        }
+
+        .photo-container2 {
+        width: 60%;
+        position: relative;
+        margin:auto;
+        /*z-index: 1;*/
+        }
+
+        .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: blue;
+        border: solid orange;
+        opacity: .9;
+        z-index: 3;
+        display: block;
+    }
+
+.main-nav {
+        width: 100%;
+        position: sticky;
+        box-shadow: 0 3px 6px rgb(0,0,0,0.4);
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        overflow: auto;
+        height: auto;
+        text-align: center;
+
+     }
+
+ ul {
+
+}
+
+
+ li {
+         display: inline;
+         padding: 0px 20px 0px 20px;
+         font-weight: bold;
+	}
+ 
+
+
+ .popIn-info2 {
+        position: absolute;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: roboto;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        padding: 20%;
+        font-size: 18px;
+        text-align: center;
+        color: brown;
+        height: 50%;
+        padding-top: 20%;
+        /*display: none;*/
+	}
+         
+  }
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+
+
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+  }
+  
+  tr { border: 1px solid #ccc;
+ 
+      }
+
+ 
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+
+
+
+
