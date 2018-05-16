@@ -144,7 +144,7 @@ margin-top: 40px;
 /* 7. headings, blockquotes, text, decorative */
  h1 {
        text-align: center;
-       color: Black;
+       color: black;
        font-family: 'Passion One', cursive;
        width: 90%;
        font-size: 42px;
@@ -156,13 +156,13 @@ margin-top: 40px;
 
  h2 {
       text-align: center;
-      color: Black;
+      color: black;
       margin-top:20px;
 }
 
 h5 {
       text-align: center;
-      color: Black;
+      color: black;
       padding:30px;
 }
 

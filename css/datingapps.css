@@ -145,11 +145,7 @@ font-weight: bold;
 .container { height: 20em; overflow: auto; }
 
 
-th{
-  background-color: #A5ECFF;
 
-
-}
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 
@@ -187,6 +183,24 @@ input {
 
 }
 
+.imagebox {
+  max-width: 600px;
+  margin: auto;
+
+  line-height: 1.5;
+
+
+}
+
+.cupid {
+  color:black;
+  max-width: 600px;
+  margin: auto;
+
+  line-height: 1.5;
+
+
+}
 
 
 .bylines {
@@ -231,56 +245,31 @@ margin-top: 40px;
 }
 
 .color0 {
-    background-image: url("card9.jpg");
+    background-image: url("../assets/images/card5.jpg");
+  
 }
 
 .color1 {
-    background-image: url("card8.jpg");
+    background-image: url("../assets/images/card4.jpg");
+   
 }
 
 .color2 {
-    background-image: url("card7.jpg");
+    background-image: url("../assets/images/card3.jpg");
 }
 
 .color3 {
-    background-image: url("card6.jpg");
+    background-image: url("../assets/images/card2.jpg");
+   
 }
 
 .color4 {
-    background-image: url("card5.jpg");
+    background-image: url("../assets/images/card1.jpg");
+
 }
 
-.color5 {
-  background-image: url("card4.jpg");
-}
 
-.color6 {
-  background-image: url("card3.jpg");
-}
 
-.color7 {
-  background-image: url("card2.jpg");
-}
-
-.color8 {
-  background-image: url("card1.jpg");
-}
-
-.text {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  font-style: italic;
-  margin-top: 50px;
-  color: #fff;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 
 /* ============= /Swipe ============== */
@@ -300,7 +289,7 @@ margin-top: 40px;
 
  h2 {
       text-align: center;
-      color: Black;
+      color: black;
       margin-top:20px;
       font-size: 24px;
       font-weight: bold;
@@ -308,7 +297,7 @@ margin-top: 40px;
 
 h5 {
       text-align: center;
-      color: Black;
+      color: black;
       padding:30px;
 }
 
@@ -353,7 +342,6 @@ figcaption {
 .caption{
       color: grey;
       text-align: center;
-      padding-top: 5px;
       padding-left: 5%;
       padding-right:5%;
       max-width: 600px;
@@ -363,13 +351,15 @@ figcaption {
 
 
 .block{
-font-size: 30px;
+font-size: 24px;
 font-family: 'Passion One', cursive;
-padding-bottom: 40px;
-max-width: 600px;
-margin: auto;
-padding-left: 20px;
+padding-bottom: 10px;
+padding-top: 30px;
+max-width: 400px;
 padding-right: 20px;
+padding-left: 20px;
+margin: auto;
+
 
 }
 
@@ -391,14 +381,27 @@ footer {
 /* 9. javascript */
 
 .circle {
-        width: 18px;
-        height: 18px;
-        border-radius: 100px;
-        background-color: blue;
-        border: solid orange;
-        opacity: .9;
+    background-image: url("../assets/images/heart.png");
+        width: 18px; 
+        height: 18px; 
+        /* border-radius: 100px; */
+       /* background-color: white; */
+        /* border: solid orange; */
+        /* opacity: 0.7; */
         z-index: 3;
         display: block;
+        background-repeat: no-repeat;
+    }
+
+.circle:hover {
+        /* background-color: purple; */
+        background-image: url("../assets/images/heart2.png");
+        width: 18px;
+        height: 18px;
+        /* opacity: 0.7; */
+        z-index: 3;
+        display: block;
+        background-repeat: no-repeat;
     }
 
     #circle_rednots {
@@ -409,32 +412,18 @@ footer {
         left: 35%;
     }
 
-    #circle_redapps {
-        position: absolute;
-        top: 80%;
-        /* Must be in percentage or will move on different devices*/
-        left: 55%;
-        /* Must be in percentage or will move on different devices*/
-    }
+
+
+
 
     #circle_human {
-        /*background-color: purple;*/
-        position: absolute;
-        top: 32%;
-        /* Must be in percentage or will move on different devices*/
-        left: 45%;
-        /* Must be in percentage or will move on different devices*/
-    }
 
-    #circle_comp {
-        /*background-color: purple;*/
-        position: absolute;
-        top: 67%;
-        /* Must be in percentage or will move on different devices*/
-        left: 45%;
-        /* Must be in percentage or will move on different devices*/
-    }
+       position: absolute; 
+        top: 29%; 
+        left: 60%; 
 
+
+    }
         
 
     #circle_autoplay {
@@ -450,19 +439,20 @@ footer {
     #circle_recommended {
         /*background-color: purple;*/
         position: absolute;
-        top: 75%;
+        top: 53%;
         /* Must be in percentage or will move on different devices*/
-        left: 45%;
+        left: 87%;
         /* Must be in percentage or will move on different devices*/
     }
 
 
-    #circle_device {
+    #circle_device { 
+
         /*background-color: purple;*/
-        position: absolute;
-        top: 33%;
+        position: absolute; 
+        top: 33%; 
         /* Must be in percentage or will move on different devices*/
-        left: 80%;
+         left: 80%; 
         /* Must be in percentage or will move on different devices*/
     }
 
@@ -470,7 +460,7 @@ footer {
     #circle_society {
         /*background-color: purple;*/
         position: absolute;
-        top: 75%;
+        top: 25%;
         /* Must be in percentage or will move on different devices*/
         left: 45%;
         /* Must be in percentage or will move on different devices*/
@@ -480,7 +470,7 @@ footer {
     .photo-container {
         width: 60%;
         position: relative;
-        margin:auto;
+        margin: auto;
         /*z-index: 1;*/
     }
 
@@ -493,21 +483,23 @@ footer {
 
     .info_slides {
 
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 60%;
         background-color: white;
         opacity: .9;
         display: none;
-        /*padding-top: 20px;*/
+        margin:0 auto;
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 90px;
+        left: 17px;
         z-index: 6;
-        border-radius: 5;
-
-
-
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #00D0FF;
     }
+
+
 
     .info_slides_show {
       animation: fadein 0.5s;
@@ -515,9 +507,14 @@ footer {
 
     }
 
+
+
+
     .hide_btn {
         display: none;
     }
+
+
 
     .popIn-info {
         position: absolute;
@@ -528,11 +525,12 @@ footer {
         left: 0px;
         z-index: 3;
         padding: 20%;
-        font-size: 16px;
+        font-size: 9px;
         text-align: center;
-        color: brown;
-        height: 50%;
-        padding-top: 30%;
+        color: black;
+        height: 20%;
+        /*padding-top: 30%;*/
+        opacity: .9;
         /*display: none;*/
 
     }
@@ -556,11 +554,17 @@ footer {
 
     }
 
+
+
+
+
+    
+
     .btn_close {
         position: absolute;
         font-family: sans-serif;
-        top: 92%;
-        left: 47%;
+        top: 90%;
+        left: 75%;
         font-size: 5em;
         color: black;
         z-index: 20;
@@ -588,7 +592,7 @@ to {opacity:0;}
 
 
 img {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         height: 30%;
     }
@@ -600,32 +604,20 @@ img {
 /* 10. mediaqueries */
     @media(min-width: 681px) {
         /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-       
-      .photo-container {
-        width: 30%;
-        position: relative;
-        margin:auto;
-        /*z-index: 1;*/
-        }
 
-        .popIn-info {
-            font-size: 16px;
-            padding-top: 30%;
-            /*display: none;*/
-        }
 
 
     } 
 
 
 
+
+/* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
     @media(min-width: 729px) {
-        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-        .circle:hover {
-            background-color: purple;
-        }
-        .popIn-info {
-            font-size: 20px;
+
+.popIn-info {
+            font-size: 16px;
             padding-top: 30%;
             padding-left: 10%;
             padding-right: 10%;
@@ -653,15 +645,28 @@ img {
         /*z-index: 1;*/
         }
 
-        .circle {
-        width: 30px;
-        height: 30px;
-        border-radius: 100px;
-        background-color: blue;
-        border: solid orange;
-        opacity: .9;
+.circle {
+    background-image: url("../assets/images/heart.png");
+        width: 48px; 
+        height: 48px; 
+        /* border-radius: 100px; */
+       /* background-color: white; */
+        /* border: solid orange; */
+        /* opacity: 0.7; */
         z-index: 3;
         display: block;
+        background-repeat: no-repeat;
+    }
+
+ .circle:hover {
+        /* background-color: purple; */
+        background-image: url("../assets/images/heart2.png");
+        width: 48px;
+        height: 48px;
+        /* opacity: 0.7; */
+        z-index: 3;
+        display: block;
+        background-repeat: no-repeat;
     }
 
 .main-nav {
@@ -686,7 +691,7 @@ img {
          display: inline;
          padding: 0px 20px 0px 20px;
          font-weight: bold;
-	}
+  }
  
 
 
@@ -705,54 +710,22 @@ img {
         height: 50%;
         padding-top: 20%;
         /*display: none;*/
-	}
-         
-  }
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-  /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr { 
-    display: block; 
-
-
-  }
-  
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr { 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-
-  }
-  
-  tr { border: 1px solid #ccc;
- 
-      }
-
- 
-  
-  td { 
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee; 
-    position: relative;
-
-  }
-  
-  td:before { 
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%; 
-    padding-right: 10px; 
-    white-space: nowrap;
   }
 
 
+.block{
+font-size: 24px;
+font-family: 'Passion One', cursive;
+padding-bottom: 10px;
+padding-top: 30px;
+max-width: 400px;
+margin: auto;
 
+
+}
+
+
+
+}
 
 

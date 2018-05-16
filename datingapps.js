@@ -429,7 +429,7 @@ ReactDOM.render(React.createElement(App, null), document.getElementById("app"));
 	/*human info*/
 	 $('#circle_human').click(function () {
 		showInfo2();
-		$('#popIn2').text("Rather than swiping, Hinge uses a scrolling feature, allowing direct interaction with the dater’s profile where you can “heart” their photos or little tidbits they write, and immediately start a natural conversation. ").addClass('popIn-info');
+		$('#popIn2').text("Coffee Meets Bagel tries to keep you coming back with streaks, points to earn, and countdowns.").addClass('popIn-info');
 	});  
 
 
@@ -469,7 +469,7 @@ ReactDOM.render(React.createElement(App, null), document.getElementById("app"));
 	/*recommended info*/
 	$('#circle_recommended').click(function () {
 		showInfo3();
-		$('#popIn3').text('The Youtube video recommendation algorithm is called "the funnel."').addClass('popIn-info');
+		$('#popIn3').text('Rather than swiping, Hinge uses a scrolling feature, allowing direct interaction with the dater’s profile where you can “heart” their photos or little tidbits they write, and immediately start a natural conversation.').addClass('popIn-info');
 	});
 
 	/*close info window*/
