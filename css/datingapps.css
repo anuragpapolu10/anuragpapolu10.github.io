@@ -565,11 +565,12 @@ footer {
         font-family: sans-serif;
         top: 90%;
         left: 75%;
-        font-size: 5em;
+        font-size: 14em;
         color: black;
         z-index: 20;
         font-weight: 900;
         display: none;
+        color: red;
     }
 
 
