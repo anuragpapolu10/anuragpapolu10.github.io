@@ -40,13 +40,13 @@ time, mark, audio, video {
 /* 2. links */
 /* unvisited link */
 a:link {
-   color: black;
+   color: #007AA3;
    text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-   color: black;
+   color: #007AA3;
    text-decoration: none;
 }
 
