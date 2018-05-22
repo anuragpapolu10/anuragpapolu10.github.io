@@ -40,7 +40,7 @@ var Card = function (_React$Component) {
 			vx: 0.0,
 			vy: 0.0,
 			mass: 0.7,
-			damping: 0.8
+			damping: 1.8
 		};
 		_this.handleDown = _this.handleDown.bind(_this);
 		_this.handleUp = _this.handleUp.bind(_this);
@@ -129,7 +129,7 @@ var Card = function (_React$Component) {
 						}
 						var limit = true;
 						var move = false;
-						var _damping = 0.06;
+						var _damping = 1.06;
 						this.setState({
 							restX: restX,
 							restY: restY,
@@ -156,7 +156,7 @@ var Card = function (_React$Component) {
 						}
 						var _limit = true;
 						var _move = false;
-						var _damping2 = 0.06;
+						var _damping2 = 1.06;
 						this.setState({
 							restX: _restX,
 							restY: _restY,
@@ -245,7 +245,7 @@ var Card = function (_React$Component) {
 						}
 						var _limit2 = true;
 						var _move2 = false;
-						var _damping4 = 0.08;
+						var _damping4 = 1.08;
 						this.setState({
 							restX: _restX2,
 							restY: _restY2,
@@ -349,7 +349,7 @@ var App = function (_React$Component2) {
 		var _this5 = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
 		_this5.state = {
-			data: [0, 1, 2, 3, 4]
+			data: [0, 1, 2, 3, 4, 5]
 		};
 		return _this5;
 	}

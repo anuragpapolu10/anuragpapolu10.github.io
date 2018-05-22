@@ -40,13 +40,13 @@ time, mark, audio, video {
 /* 2. links */
 /* unvisited link */
 a:link {
-   color: black;
+   color: #007AA3;
    text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-   color: black;
+   color: #007AA3;
    text-decoration: none;
 }
 
@@ -245,25 +245,30 @@ margin-top: 40px;
 }
 
 .color0 {
-    background-image: url("../assets/images/card5.jpg");
+    background-image: url("../assets/images/card0.jpg");
   
 }
 
 .color1 {
-    background-image: url("../assets/images/card4.jpg");
+    background-image: url("../assets/images/card5.jpg");
    
 }
 
 .color2 {
-    background-image: url("../assets/images/card3.jpg");
+    background-image: url("../assets/images/card4.jpg");
 }
 
 .color3 {
-    background-image: url("../assets/images/card2.jpg");
+    background-image: url("../assets/images/card3.jpg");
    
 }
 
 .color4 {
+    background-image: url("../assets/images/card2.jpg");
+
+}
+
+.color5 {
     background-image: url("../assets/images/card1.jpg");
 
 }
@@ -382,8 +387,8 @@ footer {
 
 .circle {
     background-image: url("../assets/images/heart.png");
-        width: 18px; 
-        height: 18px; 
+        width: 30px; 
+        height: 30px; 
         /* border-radius: 100px; */
        /* background-color: white; */
         /* border: solid orange; */
@@ -396,8 +401,8 @@ footer {
 .circle:hover {
         /* background-color: purple; */
         background-image: url("../assets/images/heart2.png");
-        width: 18px;
-        height: 18px;
+        width: 30px;
+        height: 30px;
         /* opacity: 0.7; */
         z-index: 3;
         display: block;
@@ -525,7 +530,7 @@ footer {
         left: 0px;
         z-index: 3;
         padding: 20%;
-        font-size: 9px;
+        font-size: 10px;
         text-align: center;
         color: black;
         height: 20%;
@@ -563,8 +568,8 @@ footer {
     .btn_close {
         position: absolute;
         font-family: sans-serif;
-        top: 90%;
-        left: 75%;
+        top: 60%;
+        left: 45%;
         font-size: 14em;
         color: black;
         z-index: 20;
