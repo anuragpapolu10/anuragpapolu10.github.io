@@ -198,10 +198,8 @@ figcaption {
 
 
 .box2{
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
-  
-
 }
 
 
@@ -393,6 +391,7 @@ text-align: center;
     }
 
 
+
         .popIn-info2 {
         position: absolute;
         line-height: 1.5;
@@ -462,6 +461,10 @@ to {opacity:0;}
         /*z-index: 1;*/
         }
 
+.box2{
+  max-width: 90%;
+  margin: 0 auto;
+}
         .popIn-info {
             font-size: 16px;
             padding-top: 30%;
@@ -536,13 +539,18 @@ to {opacity:0;}
 }
 
 
+
+
  li {
          display: inline;
          padding: 0px 20px 0px 20px;
          font-weight: bold;
 	}
  
-
+.box2{
+  max-width: 60%;
+  margin: 0 auto;
+}
 
  .popIn-info2 {
         position: absolute;
